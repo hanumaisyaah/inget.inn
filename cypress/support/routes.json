@@ -1,0 +1,567 @@
+{
+  "ignition.healthCheck": {
+    "name": "ignition.healthCheck",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\HealthCheckController",
+    "uri": "_ignition/health-check",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ignition.executeSolution": {
+    "name": "ignition.executeSolution",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ExecuteSolutionController",
+    "uri": "_ignition/execute-solution",
+    "method": [
+      "POST"
+    ]
+  },
+  "ignition.shareReport": {
+    "name": "ignition.shareReport",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ShareReportController",
+    "uri": "_ignition/share-report",
+    "method": [
+      "POST"
+    ]
+  },
+  "ignition.scripts": {
+    "name": "ignition.scripts",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\ScriptController",
+    "uri": "_ignition/scripts/{script}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "ignition.styles": {
+    "name": "ignition.styles",
+    "domain": null,
+    "action": "Facade\\Ignition\\Http\\Controllers\\StyleController",
+    "uri": "_ignition/styles/{style}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "cypress.factory": {
+    "name": "cypress.factory",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@factory",
+    "uri": "__cypress__/factory",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.login": {
+    "name": "cypress.login",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@login",
+    "uri": "__cypress__/login",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.logout": {
+    "name": "cypress.logout",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@logout",
+    "uri": "__cypress__/logout",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.artisan": {
+    "name": "cypress.artisan",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@artisan",
+    "uri": "__cypress__/artisan",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.run-php": {
+    "name": "cypress.run-php",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@runPhp",
+    "uri": "__cypress__/run-php",
+    "method": [
+      "POST"
+    ]
+  },
+  "cypress.csrf-token": {
+    "name": "cypress.csrf-token",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@csrfToken",
+    "uri": "__cypress__/csrf_token",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "cypress.routes": {
+    "name": "cypress.routes",
+    "domain": null,
+    "action": "Laracasts\\Cypress\\Controllers\\CypressController@routes",
+    "uri": "__cypress__/routes",
+    "method": [
+      "POST"
+    ]
+  },
+  "": {
+    "name": null,
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@home",
+    "uri": "home",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "login": {
+    "name": "login",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\LoginController@showLoginForm",
+    "uri": "login",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "logout": {
+    "name": "logout",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\LoginController@logout",
+    "uri": "logout",
+    "method": [
+      "POST"
+    ]
+  },
+  "register": {
+    "name": "register",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\RegisterController@showRegistrationForm",
+    "uri": "register",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.request": {
+    "name": "password.request",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ForgotPasswordController@showLinkRequestForm",
+    "uri": "password/reset",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.email": {
+    "name": "password.email",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ForgotPasswordController@sendResetLinkEmail",
+    "uri": "password/email",
+    "method": [
+      "POST"
+    ]
+  },
+  "password.reset": {
+    "name": "password.reset",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ResetPasswordController@showResetForm",
+    "uri": "password/reset/{token}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "password.update": {
+    "name": "password.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ResetPasswordController@reset",
+    "uri": "password/reset",
+    "method": [
+      "POST"
+    ]
+  },
+  "password.confirm": {
+    "name": "password.confirm",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\Auth\\ConfirmPasswordController@showConfirmForm",
+    "uri": "password/confirm",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.index": {
+    "name": "user.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@index",
+    "uri": "user",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.create": {
+    "name": "user.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@create",
+    "uri": "user/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.store": {
+    "name": "user.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@store",
+    "uri": "user",
+    "method": [
+      "POST"
+    ]
+  },
+  "user.show": {
+    "name": "user.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@show",
+    "uri": "user/{user}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.edit": {
+    "name": "user.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@edit",
+    "uri": "user/{user}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "user.update": {
+    "name": "user.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@update",
+    "uri": "user/{user}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "user.destroy": {
+    "name": "user.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@destroy",
+    "uri": "user/{user}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "schedule.index": {
+    "name": "schedule.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@index",
+    "uri": "schedule",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "schedule.create": {
+    "name": "schedule.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@create",
+    "uri": "schedule/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "schedule.store": {
+    "name": "schedule.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@store",
+    "uri": "schedule",
+    "method": [
+      "POST"
+    ]
+  },
+  "schedule.show": {
+    "name": "schedule.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@show",
+    "uri": "schedule/{schedule}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "schedule.edit": {
+    "name": "schedule.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@edit",
+    "uri": "schedule/{schedule}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "schedule.update": {
+    "name": "schedule.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@update",
+    "uri": "schedule/{schedule}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "schedule.destroy": {
+    "name": "schedule.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@destroy",
+    "uri": "schedule/{schedule}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "assignment.index": {
+    "name": "assignment.index",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@index",
+    "uri": "assignment",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "assignment.create": {
+    "name": "assignment.create",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@create",
+    "uri": "assignment/create",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "assignment.store": {
+    "name": "assignment.store",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@store",
+    "uri": "assignment",
+    "method": [
+      "POST"
+    ]
+  },
+  "assignment.show": {
+    "name": "assignment.show",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@show",
+    "uri": "assignment/{assignment}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "assignment.edit": {
+    "name": "assignment.edit",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@edit",
+    "uri": "assignment/{assignment}/edit",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "assignment.update": {
+    "name": "assignment.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@update",
+    "uri": "assignment/{assignment}",
+    "method": [
+      "PUT",
+      "PATCH"
+    ]
+  },
+  "assignment.destroy": {
+    "name": "assignment.destroy",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@destroy",
+    "uri": "assignment/{assignment}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "landing_page": {
+    "name": "landing_page",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@landingPage",
+    "uri": "landing-page",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "email_confirmation": {
+    "name": "email_confirmation",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@emailConfirmation",
+    "uri": "email-confirmation",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "check_email": {
+    "name": "check_email",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@getAccountForResetPassword",
+    "uri": "check_email",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "reset_password": {
+    "name": "reset_password",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@resetPassword",
+    "uri": "reset-password/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "home": {
+    "name": "home",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@home",
+    "uri": "/",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "assignment.level": {
+    "name": "assignment.level",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@sortByLevel",
+    "uri": "assignment?sortBy=level",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "assignment.markAsDone": {
+    "name": "assignment.markAsDone",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@markAsDone",
+    "uri": "assignment/done/{id}",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "calendar": {
+    "name": "calendar",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\CalendarController@index",
+    "uri": "calendar",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "settings": {
+    "name": "settings",
+    "domain": null,
+    "action": "\\Illuminate\\Routing\\RedirectController",
+    "uri": "settings",
+    "method": [
+      "GET",
+      "HEAD",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE",
+      "OPTIONS"
+    ]
+  },
+  "account": {
+    "name": "account",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@settingAccount",
+    "uri": "settings/account",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "notification": {
+    "name": "notification",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@settingNotification",
+    "uri": "settings/notification",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "notification.update": {
+    "name": "notification.update",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\NotificationController@update",
+    "uri": "settings/notification/{id}",
+    "method": [
+      "PUT"
+    ]
+  },
+  "reset_data": {
+    "name": "reset_data",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\PageController@settingResetData",
+    "uri": "settings/reset-data",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  },
+  "reset_assignment": {
+    "name": "reset_assignment",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\AssignmentController@reset_assignment",
+    "uri": "settings/reset-assignment/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "reset_schedule": {
+    "name": "reset_schedule",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\ScheduleController@reset_schedule",
+    "uri": "settings/reset-schedule/{id}",
+    "method": [
+      "DELETE"
+    ]
+  },
+  "change_password": {
+    "name": "change_password",
+    "domain": null,
+    "action": "App\\Http\\Controllers\\UserController@changePassword",
+    "uri": "settings/change-password",
+    "method": [
+      "GET",
+      "HEAD"
+    ]
+  }
+}
