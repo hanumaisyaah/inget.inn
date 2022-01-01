@@ -69,7 +69,7 @@
                                 <h4>March 2021</h4>
                                 <h4 class="subheading">An Idea is Born</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">After validation and research, we decided to making an Inget.In, web based application</p></div>
+                            <div class="timeline-body"><p class="text-muted">After validation and research, we decided to making an inget.in, web based application</p></div>
                         </div>
                     </li>
                     <li>
@@ -99,7 +99,7 @@
                                 <br />
                                 Of Our
                                 <br />
-                                Story!
+                                Next Journey!
                             </h4>
                         </div>
                     </li>
