@@ -8,3 +8,12 @@ services:
       - 80:80
     volumes:
       - ./src:/var/www/laravel
+    version: "3"
+  web-2:
+    image: nargyanti/uas-cloud-2:latest
+    container_name: web-2
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/laravel
