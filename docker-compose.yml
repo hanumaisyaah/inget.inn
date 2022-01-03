@@ -3,6 +3,7 @@ services:
   web:
     image: nargyanti/uas-cloud:latest
     container_name: web
+    restart: unless-stopped
     ports:
       - 80:80
     volumes:
