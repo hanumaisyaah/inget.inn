@@ -146,7 +146,7 @@ jobs:
           host: ${{ env.INSTANCE_IP }}
           username: opc
           key: ${{ secrets.OCI_KEY_FILE }}
-          source: "docker-compose.yml"
+          source: "docker-compose-2.yml"
           target: "./"
 
       - name: 'Running Docker Compose'
