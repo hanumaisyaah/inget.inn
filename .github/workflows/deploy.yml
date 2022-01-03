@@ -38,23 +38,29 @@ jobs:
         run: |
           npm install
           npm run dev
-
-      - name: Create env file
+      
+      - name: Copy .env
         run: |
-          touch .env
-          echo APP_NAME=Laravel >> .env
-          echo APP_ENV=local >> .env
-          echo APP_KEY= >> .env
-          echo APP_DEBUG=true >> .env
-          echo APP_URL=http://localhost >> .env
-          echo DB_CONNECTION=mysql >> .env
-          echo DB_HOST=${{ secrets.DB_HOST }} >> .env
-          echo DB_PORT=3306 >> .env
-          echo DB_DATABASE=${{ secrets.DB_DATABASE }} >> .env
-          echo DB_USERNAME=${{ secrets.DB_USERNAME }} >> .env
-          echo DB_PASSWORD=${{ secrets.DB_PASSWORD }} >> .env          
-          cat .env
+          cp .env.example .env
+          echo 'DB_CONNECTION=mysql >> .env
+          echo 'DB_HOST=${{ secrets.DB_HOST }}' >> .env
+          echo 'DB_PORT=3306' >> .env
+          echo 'DB_DATABASE=${{ secrets.DB_DATABASE }}'' >> .env
+          echo 'DB_USERNAME=${{ secrets.DB_USERNAME }}' >> .env
+          echo 'DB_PASSWORD=${{ secrets.DB_PASSWORD }}' >> .env          
           php artisan key:generate
+
+      # - name: Create env file
+      #   run: |
+      #     touch .env
+      #     echo APP_NAME=Laravel >> .env
+      #     echo APP_ENV=local >> .env
+      #     echo APP_KEY= >> .env
+      #     echo APP_DEBUG=true >> .env
+      #     echo APP_URL=http://localhost >> .env
+          
+      #     cat .env
+      #     php artisan key:generate
 
       - name: 'Login to Dockerhub'
         uses: docker/login-action@v1
@@ -98,7 +104,7 @@ jobs:
             oci compute instance list \
             --lifecycle-state RUNNING \
             --compartment-id ${{secrets.VM_COMPARTMENT_OCID}} \
-            --display-name quiz2_cloud \
+            --display-name uas_cloud \
             --query "data [0].id" \
             --raw-output \
             )" >> $GITHUB_ENV
@@ -113,7 +119,7 @@ jobs:
             --shape ${{secrets.VM_SHAPE}} \
             --shape-config '{"memoryInGBs": 1, "ocpus": 1}' \
             --assign-public-ip true \
-            --display-name quiz2_cloud \
+            --display-name uas_cloud \
             --image-id ${{secrets.VM_CUSTOM_IMAGE_OCID}} \
             --ssh-authorized-keys-file /home/runner/.oci/oci_api_key_public.pem \
             --subnet-id ${{secrets.VM_SUBNET_OCID}} \
