@@ -1,11 +1,10 @@
 version: "3"
 services:
   web:
-    image: nargyanti/uas-cloud:latest
+    image: nargyanti/latihan-quiz2-cloud:latest
     container_name: web
     restart: unless-stopped
     ports:
       - 80:80
     volumes:
       - ./src:/var/www/laravel
-    version: "3"
