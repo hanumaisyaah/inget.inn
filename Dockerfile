@@ -8,6 +8,7 @@ RUN curl -o /usr/local/bin/composer https://getcomposer.org/download/latest-stab
 # hadolint ignore=DL3008
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
+    apache2 \
     cron \
     icu-devtools \
     jq \
