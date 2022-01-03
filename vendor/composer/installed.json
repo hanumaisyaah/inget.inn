@@ -1586,6 +1586,61 @@
             "install-path": "../laracasts/cypress"
         },
         {
+            "name": "laravel-fans/docker",
+            "version": "0.5.1",
+            "version_normalized": "0.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-fans/laravel-docker.git",
+                "reference": "28d2842bcd0ff4992ddc572376e6d782c87e2d0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-fans/laravel-docker/zipball/28d2842bcd0ff4992ddc572376e6d782c87e2d0b",
+                "reference": "28d2842bcd0ff4992ddc572376e6d782c87e2d0b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=v5.5.50"
+            },
+            "require-dev": {
+                "orchestra/testbench": ">=v3.5.6",
+                "phpmd/phpmd": "^2.11",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "time": "2021-12-16T07:32:33+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelFans\\Docker\\DockerServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "LaravelFans\\Docker\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sinkcup",
+                    "email": "sinkcup@gmail.com"
+                }
+            ],
+            "description": "Full Laravel production environment for Docker",
+            "support": {
+                "issues": "https://github.com/laravel-fans/laravel-docker/issues",
+                "source": "https://github.com/laravel-fans/laravel-docker/tree/0.5.1"
+            },
+            "install-path": "../laravel-fans/docker"
+        },
+        {
             "name": "laravel/framework",
             "version": "v8.77.1",
             "version_normalized": "8.77.1.0",
@@ -8335,6 +8390,7 @@
         "filp/whoops",
         "hamcrest/hamcrest-php",
         "laracasts/cypress",
+        "laravel-fans/docker",
         "laravel/sail",
         "mockery/mockery",
         "myclabs/deep-copy",

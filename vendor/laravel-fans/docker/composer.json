@@ -1,0 +1,39 @@
+{
+    "name": "laravel-fans/docker",
+    "description": "Full Laravel production environment for Docker",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sinkcup",
+            "email": "sinkcup@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LaravelFans\\Docker\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "vendor/orchestra/testbench-core/laravel/app/",
+            "LaravelFans\\Docker\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelFans\\Docker\\DockerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": ">=v5.5.50"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">=v3.5.6",
+        "phpmd/phpmd": "^2.11",
+        "squizlabs/php_codesniffer": "^3.6"
+    }
+}

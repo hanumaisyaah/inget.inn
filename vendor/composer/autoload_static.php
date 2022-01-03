@@ -126,6 +126,7 @@ class ComposerStaticInit2930f0286d5a20ee6bbf21f5d08ffa53
             'Laravel\\Tinker\\' => 15,
             'Laravel\\SerializableClosure\\' => 28,
             'Laravel\\Sail\\' => 13,
+            'LaravelFans\\Docker\\' => 19,
             'Laracasts\\Cypress\\' => 18,
         ),
         'I' => 
@@ -404,6 +405,10 @@ class ComposerStaticInit2930f0286d5a20ee6bbf21f5d08ffa53
         'Laravel\\Sail\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
+        ),
+        'LaravelFans\\Docker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-fans/docker/src',
         ),
         'Laracasts\\Cypress\\' => 
         array (
@@ -1368,6 +1373,7 @@ class ComposerStaticInit2930f0286d5a20ee6bbf21f5d08ffa53
         'Faker\\Provider\\nl_BE\\Payment' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Payment.php',
         'Faker\\Provider\\nl_BE\\Person' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Person.php',
         'Faker\\Provider\\nl_BE\\PhoneNumber' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/PhoneNumber.php',
+        'Faker\\Provider\\nl_BE\\Text' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php',
         'Faker\\Provider\\nl_NL\\Address' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Address.php',
         'Faker\\Provider\\nl_NL\\Color' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Color.php',
         'Faker\\Provider\\nl_NL\\Company' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Company.php',
@@ -2701,6 +2707,8 @@ class ComposerStaticInit2930f0286d5a20ee6bbf21f5d08ffa53
         'Laracasts\\Cypress\\Controllers\\CypressController' => __DIR__ . '/..' . '/laracasts/cypress/src/Controllers/CypressController.php',
         'Laracasts\\Cypress\\CypressBoilerplateCommand' => __DIR__ . '/..' . '/laracasts/cypress/src/CypressBoilerplateCommand.php',
         'Laracasts\\Cypress\\CypressServiceProvider' => __DIR__ . '/..' . '/laracasts/cypress/src/CypressServiceProvider.php',
+        'LaravelFans\\Docker\\DockerPublishCommand' => __DIR__ . '/..' . '/laravel-fans/docker/src/DockerPublishCommand.php',
+        'LaravelFans\\Docker\\DockerServiceProvider' => __DIR__ . '/..' . '/laravel-fans/docker/src/DockerServiceProvider.php',
         'Laravel\\Sail\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/InstallCommand.php',
         'Laravel\\Sail\\Console\\PublishCommand' => __DIR__ . '/..' . '/laravel/sail/src/Console/PublishCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
